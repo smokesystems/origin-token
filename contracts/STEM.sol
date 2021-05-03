@@ -17,7 +17,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
  * This contract uses {AccessControl} to lock permissioned functions using the
  * different roles - head to its documentation for details.
  *
- * The account that deploys the contract will be granted the minter and pauser
+ * The account that deploys the contract will be granted the pauser
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
