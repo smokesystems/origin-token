@@ -5,6 +5,7 @@ The $STEM Infrastructure and Ecosystem Token is designed to enable and facilitat
 The structure of the token is designed in such a way that token availability remains scarce until growth occurs, so as to avoid unnecessary circulation, as well as enabling the potential for limited increase in supply based on the growth of the network (creator_sales multipled by number of assets sold throughout the network) in order to avoid price dilution over time.
 
 $STEM Token Specifics
+
 Initial Circulating Supply: 77,777 $STEM (including liquidity, rewards and incentives)
 
 Initial Minted Supply: 777,777 $STEM
