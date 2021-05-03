@@ -16,7 +16,7 @@ GENERAL DETAILS:
 - The ability for ADMIN_ROLE to burn (destroy) tokens which are not in circulation
 - The abiity for token holders to burn (destroy) their tokens
 - A minter role that allows for restricted, programmatic token minting (creation) after 12 months and only based on growth, via our MintingOracle to a max supply of   7,777,777 $STEM
-  The MINTER_ROLE cannot transfer/move or burn (destroy) tokens, it is restricted to minting based on specifics from our network growth (A role_based secure           measure)
+- The MINTER_ROLE cannot transfer/move or burn (destroy) tokens, it is restricted to minting based on specifics from our network growth (A role_based secure           measure)
 - A pauser role that allows all token transfers to be paused and unpaused based on specific events that may occur. Safety first for our community.
  
  * This contract uses {AccessControl} to lock permissioned functions using the
