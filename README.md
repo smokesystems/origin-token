@@ -8,7 +8,7 @@ $STEM Token Specifics
 
 Initial Circulating Supply: 77,777 $STEM (including liquidity, rewards and incentives)
 
-Initial Minted Supply: 777,777 $STEM
+Initial Minted Supply: 777,777 $STEM (80% locked for 6 months, thereafter released in accordance with our incentive protocol).
 
 MAX Total Supply: 7,777,777 $STEM (minting is locked for 12 months post deployment and can only happen in-line with growth. Minting is based on our MintingOracle and cannot be done manually or via the ADMIN_ROLE. MintingOracle information will be publicly available to cross-reference.
 
