@@ -10,7 +10,7 @@ Initial Circulating Supply: 77,777 $STEM (including liquidity, rewards and incen
 
 Initial Minted Supply: 777,777 $STEM
 
-MAX Total Supply: 7,777,777 $STEM (minting is locked for 12 monthpost deployment and can only happen in-line with growth. Minting is based on our MintingOracle and cannot be done manually or via the ADMIN_ROLE).
+MAX Total Supply: 7,777,777 $STEM (minting is locked for 12 months post deployment and can only happen in-line with growth. Minting is based on our MintingOracle and cannot be done manually or via the ADMIN_ROLE. MintingOracle information will be publicly available to cross-reference.
 
 GENERAL DETAILS:
 - The ability for ADMIN_ROLE to burn (destroy) tokens which are not in circulation
