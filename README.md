@@ -6,7 +6,9 @@ The structure of the token is designed in such a way that token availability rem
 
 $STEM Token Specifics
 Initial Circulating Supply: 77,777 $STEM (including liquidity, rewards and incentives)
+
 Initial Minted Supply: 777,777 $STEM
+
 MAX Total Supply: 7,777,777 $STEM (minting is locked for 12 monthpost deployment and can only happen in-line with growth. Minting is based on our MintingOracle and cannot be done manually or via the ADMIN_ROLE).
 
 GENERAL DETAILS:
