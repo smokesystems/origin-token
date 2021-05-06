@@ -14,7 +14,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
  *
  *  - The ability for ADMIN_ROLE to burn (destroy) tokens not in circulation
  *  - The abiity for token holders to burn (destroy) their tokens
- *  - A minter role that allows for restricted, programmatic token minting (creation). See below. 
+ *  - A minter role that allows for restricted, programmatic token minting (creation). See below.
  *  - A pauser role that allows all token transfers to be paused based on specific events
  *
  * This contract uses {AccessControl} to lock permissioned functions using the
@@ -22,7 +22,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
  *
  * The account that deploys the contract will be granted the pauser
  * roles, as well as the default admin role, which will let it grant both minter
- * and pauser roles to other accounts where applicable. 
+ * and pauser roles to other accounts where applicable.
  */
 contract STEM is Context, AccessControlEnumerable, ERC20, ERC20Pausable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
@@ -32,7 +32,7 @@ contract STEM is Context, AccessControlEnumerable, ERC20, ERC20Pausable {
     bool mintingisAllowed = true;
 
     /**
-     * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `PAUSER_ROLE` to the
+     * @dev Grants `DEFAULT_ADMIN_ROLE` and `PAUSER_ROLE` to the
      * account that deploys the contract.
      *
      * See {ERC20-constructor}.
@@ -53,7 +53,7 @@ contract STEM is Context, AccessControlEnumerable, ERC20, ERC20Pausable {
      * @dev Creates `amount` new tokens for `to`.
      *
      * Requirements:
-     *  
+     *
      * - the caller must have the `DEFAULT_ADMIN_ROLE`.
      */
     function turnOffMint() public virtual {
@@ -67,13 +67,13 @@ contract STEM is Context, AccessControlEnumerable, ERC20, ERC20Pausable {
      * See {ERC20-_mint}.
      *
      * Specifics:
-     * 
+     *
      *  - Minting is restricted, and locked for 12 months from deployment
      *  - The admin may permanently close (destroy) the minting function, based on certain network growth metrics
-     *  - Minting of new tokens is not manual, this role is specific to our MintingOracle which is designed to only 
+     *  - Minting of new tokens is not manual, this role is specific to our MintingOracle which is designed to only
      *    mint based on the growth of the network (Creators_Sales * Asset_Sales); and distributed in accordance with
-     *    our governance structure to Ecosystem participants, creators, collectors and partners. 
-     *    At no point will anyone, including STEM or any representatives of STEM, have the MINTER ROLE. 
+     *    our governance structure to Ecosystem participants, creators, collectors and partners.
+     *    At no point will anyone, including STEM or any representatives of STEM, have the MINTER ROLE.
      *    Specifics to minted tokens will be published publicly for transparency.
      * - the caller must have the `MINTER_ROLE`.
      */

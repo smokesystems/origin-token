@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Smart contracts for STEM token.",
   "scripts": {
-    "compile": "./node_modules/.bin/truffle compile",
-    "deploy": "./node_modules/.bin/truffle compile && ./node_modules/.bin/truffle migrate --reset",
-    "deployKovan": "./node_modules/.bin/truffle compile && ./node_modules/.bin/truffle migrate --network kovan --reset",
+    "compile": "./node_modules/.bin/truffle compile --all",
+    "deploy": "./node_modules/.bin/truffle migrate --reset",
+    "deployKovan": "./node_modules/.bin/truffle migrate --network kovan --reset",
     "test": "./node_modules/.bin/truffle test",
     "mergecontract": "./node_modules/.bin/sol-merger \"./contracts/STEM.sol\" ./build",
     "gan": "./node_modules/.bin/ganache-cli --host 0.0.0.0 -i 15 --account=\"0x50cc060f970bb3d6f080a2b1674f5fb434379c9a9ecbcddfb1465ceb1b324a31,100000000000000000000000\" --account=\"0x5d338e0aa4afd4b3cbb615343144b7f3cf94b985b7f2569e1a496e0a2589adbe,100000000000000000000000\" --account=\"0x92ee7f508c58fb080603f36192b189f477cd21b1308d46295ab725c68c5212f3,100000000000000000000000\" --account=\"0x5b4c4d07e9a137cb542a77ae0133d2304d51d0b712a25dc3a19c66a9a4b47804,100000000000000000000000\" --account=\"0xe52de5173d71cad352f1105fe02de297c0cd6786a5438352e54a1c52b544d698,100000000000000000000000\" --account=\"0xb7eb35d4625a1da612c70ac8eeeecbb689e25a146c3753966459553c8f8c88a7,100000000000000000000000\" --secure -u 0 -u 1 -u 2 -u 3 -u 4 -u 5"
