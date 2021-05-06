@@ -21,8 +21,9 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
  * different roles - head to its documentation for details.
  *
  * The account that deploys the contract will be granted the pauser
- * roles, as well as the default admin role, which will let it grant both minter
- * and pauser roles to other accounts where applicable.
+ * roles, as well as the default admin role, which will let it grant
+ * the pauser roles to other accounts where applicable - looking toward
+ * community safety protocols.
  */
 contract STEM is Context, AccessControlEnumerable, ERC20, ERC20Pausable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
