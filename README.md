@@ -1,8 +1,8 @@
 # STEM Infrastructure and Ecosystem Token
 
-The $STEM Infrastructure and Ecosystem Token is designed to enable and facilitate the creation of value, estalishment of governance protocols and the maximizing of participant incentives through the STEM network.
+The $STEM Infrastructure and Ecosystem Token is designed to enable and facilitate the creation of value, establishment of governance protocols and the maximizing of participant incentives through the STEM network.
 
-The structure of the token is designed in such a way that token availability remains scarce until growth occurs, so as to avoid unnecessary circulation, as well as enabling the potential for limited increase in supply based on the growth of the network (creator_sales multipled by number of assets sold throughout the network across all entities) in order to avoid price dilution over time.
+The structure of the token is designed in such a way that token availability remains scarce until growth occurs, so as to avoid unnecessary circulation, as well as enabling the potential for restricted increase in supply based on the growth of the network (creator_sales multiplied by number of assets sold throughout the network across all entities) in order to avoid price dilution over time.
 
 $STEM Token Specifics
 
