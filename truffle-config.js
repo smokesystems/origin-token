@@ -3,10 +3,32 @@ require('babel-polyfill');
 
 var HDWalletProvider = require('@truffle/hdwallet-provider');
 
-const kovanPrivateKey = process.env.TEST_PRIVATE_KEY || '';
-const apiKey = process.env.TEST_APIKEY || '';
+const privateKey = process.env.PRIVATE_KEY || '';
+const apiKey = process.env.APIKEY || '';
 
-const costonPrivateKey = process.env.COSTON_TEST_PRIVATE_KEY || '';
+const providerMainnet = new HDWalletProvider({"privateKeys": [privateKey],
+                                              "chainId": 1,
+                                              "providerOrUrl": 'wss://infura.io/ws/v3/' + apiKey,
+                                              "addressIndex": 0
+                                              });
+
+const providerKovan = new HDWalletProvider({"privateKeys": [privateKey],
+                                            "chainId": 42,
+                                            "providerOrUrl": 'wss://kovan.infura.io/ws/v3/' + apiKey,
+                                            "addressIndex": 0
+                                            });
+
+const providerBSC = new HDWalletProvider({"privateKeys": [privateKey],
+                                          "chainId": 56,
+                                          "providerOrUrl": 'https://bsc-dataseed1.defibit.io/',
+                                          "addressIndex": 0
+                                          });
+
+const providerBSCtest = new HDWalletProvider({"privateKeys": [privateKey],
+                                              "chainId": 97,
+                                              "providerOrUrl": 'https://data-seed-prebsc-1-s1.binance.org:8545',
+                                              "addressIndex": 0
+                                              });
 
 module.exports = {
     networks: {
@@ -17,10 +39,29 @@ module.exports = {
             // gas: 12487794, // web3.eth.getBlock("pending").gasLimit
             network_id: "*"
         },
+        mainnet: {
+            network_id: 1,
+            provider: providerMainnet,
+            gas: 12487794,
+            confirmations: 2
+        },
         kovan: {
             network_id: 42,
-            provider: new HDWalletProvider([kovanPrivateKey], 'https://kovan.infura.io/v3/' + apiKey),
-            gas: 12487794
+            provider: providerKovan,
+            gas: 12487794,
+            confirmations: 2
+        },
+        bsc: {
+            network_id: 56,
+            provider: providerBSC,
+            gas: 2887794,
+            confirmations: 2
+        },
+        bsctest: {
+            network_id: 97,
+            provider: providerBSCtest,
+            gas: 2887794,
+            confirmations: 2
         }
     },
     compilers: {
